@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# 🤠 Chuck Norris Jokes App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um pequeno aplicativo React que consome a [API pública de piadas do Chuck Norris](https://api.chucknorris.io/) e exibe piadas aleatórias com um simples clique. O projeto utiliza `axios` para fazer requisições HTTP e `useState`/`useEffect` do React para gerenciamento de estado e efeitos colaterais.
 
-## Available Scripts
+## 📸 Demonstração
 
-In the project directory, you can run:
+<img width="455" alt="image" src="https://github.com/user-attachments/assets/b25d6778-de5a-45e0-bb70-31762a9cd16d" />
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔁 Busca piadas aleatórias da API do Chuck Norris
+- 🧠 Usa React hooks (`useState`, `useEffect`)
+- 🖼️ Exibe o icon do Chuck Norris junto com a piada
+- 🔘 Botão para carregar uma nova piada
+- ⚠️ Tratamento de loading e erros
 
-### `npm test`
+## 📁 Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+src/
+│
+├── components/
+│   └── Card.js        # Componente principal que exibe a piada
+│   └── Card.css       # Estilo do card
+│
+├── service/
+│   └── api.js         # Instância do axios com baseURL da API
+│
+├── App.js             # Componente principal do React
+└── index.js           # Entrada da aplicação
+```
 
-### `npm run build`
+## 🧑‍💻 Tecnologias Usadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- Axios
+- JavaScript
+- CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone o repositório:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/niquequirino/chuck-norris.git
+cd chuck-norris
+```
 
-### `npm run eject`
+2. Inicie o projeto:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A aplicação abrirá em `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌐 Fonte da API
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [https://api.chucknorris.io](https://api.chucknorris.io)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Feito com ❤️ e risadas pelo Chuck Norris.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
